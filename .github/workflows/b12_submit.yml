@@ -24,4 +24,4 @@ jobs:
         run: pip install requests
 
       - name: Execute Submission
-        run: python submit_b12.py
+        run: python main.py
