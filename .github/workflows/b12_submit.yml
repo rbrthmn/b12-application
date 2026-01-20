@@ -24,4 +24,9 @@ jobs:
         run: pip install requests
 
       - name: Execute Submission
-        run: python main.py
+        env:
+          MY_NAME: ${{ secrets.MY_NAME }}
+          MY_EMAIL: ${{ secrets.MY_EMAIL }}
+          MY_RESUME: ${{ secrets.MY_RESUME }}
+          B12_SECRET: ${{ secrets.B12_SECRET }}
+        run: python submit_b12.py
