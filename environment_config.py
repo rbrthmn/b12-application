@@ -14,8 +14,8 @@ class EnvironmentConfig:
 
     def build_submission_data(self) -> SubmissionData:
         server_url = self.get("GITHUB_SERVER_URL", "https://github.com")
-        repo = self.get("GITHUB_REPOSITORY", "b12-application")
-        run_id = self.get("GITHUB_RUN_ID", "0")
+        repo = self.get("REPOSITORY", "b12-application")
+        run_id = self.get("RUN_ID", "0")
 
         timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + "Z"
 
