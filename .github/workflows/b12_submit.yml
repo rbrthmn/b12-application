@@ -24,9 +24,4 @@ jobs:
         run: pip install requests
 
       - name: Execute Submission
-        env:
-          MY_NAME: "Your Name"
-          MY_EMAIL: "you@example.com"
-          MY_RESUME: "https://your-resume-link.example.com"
-          B12_SECRET: "hello-there-from-b12"
         run: python submit_b12.py
