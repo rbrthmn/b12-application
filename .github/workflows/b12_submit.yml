@@ -29,4 +29,4 @@ jobs:
           MY_EMAIL: ${{ secrets.MY_EMAIL }}
           MY_RESUME: ${{ secrets.MY_RESUME }}
           B12_SECRET: ${{ secrets.B12_SECRET }}
-        run: python submit_b12.py
+        run: python main.py
