@@ -23,7 +23,8 @@ class B12Client:
             "X-Signature-256": f"sha256={signature}"
         }
 
-        logger.info(f"Submitting payload to {url}")
+        logger.info(f"Submitting payload {data}")
+        logger.info(f"To {url}")
         
         try:
             response = requests.post(url, data=json_payload, headers=headers)
